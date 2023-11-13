@@ -2,7 +2,7 @@ import Header from './Header';
 import Home from './Home';
 import Input from './Input';
 import Profile from './Profile'
-import {Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 import { useEffect, useState } from 'react';
 import Recommendation from './Recommendation';
@@ -77,13 +77,13 @@ function App() {
   return (
     <div className="App">
       <Header/>
-        <Switch>
+        <Router>
           <Route path='/' element={<Home />}/>
           <Route path='/input' element={<Input limits={limits} incomes={incomes} handleInputChange={handleInputChange} />}/>
           <Route path='/profile' element={<Profile limits={limits} incomes={incomes} balance={balance} selectedRecommendation={selectedRecommendation} />}/>
           <Route path='/recommendation' element={<Recommendation incomes={incomes} parsedLimits={parsedLimits} balance={balance} onSaveRecommendation={handleSaveRecommendation} />}/>
           <Route path='/about' element={<About />}/>
-        </Switch>  
+        </Router>  
     </div>
   );
 }

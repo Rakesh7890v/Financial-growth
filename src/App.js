@@ -42,7 +42,7 @@ function App() {
         setLimits((prevLimits) => ({...prevLimits, [key]: storedValue}));
       }
     })
-  }, []);
+  }, [limits]);
   
   const handleInputChange =(e) => {
     const {name, value} = e.target;

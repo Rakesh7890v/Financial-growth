@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <div>
       <div className="head-section">
-        <img src={finance}></img>
+        <img src={finance} alt='Finance-icon'></img>
         <div className="nav-content">
           <ul className={showMenu ? 'show-menu' : ''}>
             <li><Link to='/' className='line' onClick={closeMenu}>Home</Link></li>

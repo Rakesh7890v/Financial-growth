@@ -7,7 +7,7 @@ const About = () => {
     <div>
         <div className="about-section">
             <div className="left-photo">
-                <img src={photo}></img>
+                <img src={photo} alt='Creator-icon'></img>
             </div>
             <div className="right-about">
               <h2>Rakesh <span>V</span></h2>

@@ -45,7 +45,7 @@ const Profile = ({limits, incomes,balance, selectedRecommendation}) => {
           <div className="balance-savings">
 
           <div className="profile-balance">
-            <img src={balanceamt} alt='balance-amount image'></img>
+            <img src={balanceamt} alt='balance-amount-icons'></img>
             <div className="percentage">
               <h2>Balance Amount</h2>
               <p>${isNaN(balance) ? 0 : balance}</p>
